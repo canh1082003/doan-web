@@ -1,0 +1,453 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Sữa</title>
+    <link rel="stylesheet" href="/css/giaodienbase.css">
+    <link rel="stylesheet" href="/css/giaodienmain.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="/font/themify-icons-font (1)/themify-icons/themify-icons.css">
+</head>
+<body>
+    <style>
+        .modal{
+            display: block;
+        }
+    </style>
+    <header class="header">
+        <div class="grid">
+            <nav class="header_nav ">
+                <ul class="header_nav-list ">
+                    <li class="header_nav-item header_nav-item-hasQR header_nav-item-separate"> Vào Cửa Hàng Quán Sữa
+                        <!-- <div class="header_nav-QR">
+                           <img src="/img/img/QR_code.png" alt="QR_code" class="header_nav-img">
+                           <div class="header_nav-QR-apps">
+                            <a href="" class="header_nav-QR-link">
+                                <img src="/img/img/GooglePlay.png "alt="Google Play" class="header_nav-QR-dow-img">
+                            </a>
+                            <a href="" class="header_nav-QR-link"> 
+                                <img src="/img/img/Appstore.png" alt="App Store" class="header_nav-QR-dow-img">
+                            </a>
+                           </div>
+                        </div> -->
+                    </li>
+                    <li class="header_nav-item"> 
+                        <span class="header_nav_item-nopointer">Kết Nối</span> 
+                        <a href="https://www.facebook.com/gavl2k3" class="header_nav-icon">
+                            <i class="header_nav-icon-link ti-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/anhhnfe_108/?theme=dark" class="header_nav-icon">
+                            <i class="header_nav-icon-link ti-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header_nav-list ">
+                    <li class="header_nav-item">
+                        <a href="" class="header_nav-item-list">
+                        <a href="" class="header_nav-icon"></a>
+                            <i class="header_nav-icon-link ti-bell"></i>
+                         Thông Báo
+                        </a>
+                        <div class="header_notify">
+                            <header class="header_notify-header">
+                                <h3> Thông Báo Mới Nhận</h3>
+                            </header>
+                            <div class="header_notify-list">
+                                <div class="header_notify-item">
+                                    <a href="" class="header_notify-link">
+                                        <span>
+                                            <!-- <img src="/img/khuyenmai.jpg" alt="" class="header_notify-img"> -->
+                                        </span>
+                                        <div class="header_notify-info">
+                                            <p class="header_notify-name">
+                                                Tặng ngay combo 5 gói khi bạn đăng ký gói theo năm
+                                            </p>
+                                            <p class="header_notify-descriotion">
+                                                Khuyến Mãi Siêu Hot
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header_notify-list">
+                                <div class="header_notify-item">
+                                    <a href="" class="header_notify-link">
+                                        <span>
+                                            <!-- <img src="/img/khuyenmai.jpg" alt="" class="header_notify-img"> -->
+                                        </span>
+                                        <div class="header_notify-info">
+                                            <p class="header_notify-name">
+                                                Tặng ngay combo 3 gói khi bạn đăng ký gói theo tháng
+                                            </p>
+                                            <p class="header_notify-descriotion">
+                                                Khuyến Mãi Siêu Hot
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header_notify-list">
+                                <div class="header_notify-item">
+                                    <a href="" class="header_notify-link">
+                                        <span>
+                                            <!-- <img src="/img/khuyenmai.jpg" alt="" class="header_notify-img"> -->
+                                        </span>
+                                        <div class="header_notify-info">
+                                            <p class="header_notify-name">
+                                                Tặng ngay combo 1 gói khi bạn đăng ký gói theo tuần
+                                            </p>
+                                            <p class="header_notify-descriotion">
+                                                Khuyến Mãi Siêu Hot
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                     
+                            <footer class="header_notify-footer">
+                                <a class="header_notify-footer-btn">
+                                    Xem Tất Cả
+                                </a>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="header_nav-item">
+                        <a href="" class="header_nav-item-list">
+                        <a href="" class="header_nav-icon"></a>
+                            <i class="header_nav-icon-link ti-help-alt"></i>
+                        Trợ Giúp</a>
+                    </li>
+                    <li class="header_nav-item header_nav-item-strong header_nav-item-separate register-js-modal"> Đăng Ký </li>
+                    <li class="header_nav-item header_nav-item-strong login-js-modal"> Đăng Nhập </li> 
+                </ul>
+            </nav>
+
+            <div class="header-withs-search">
+                <div class="header__logo">
+                  Bibo Mart
+                </div>
+                <div class="header__search">
+                    <div class="header__search-input-warp">
+                        <input type="text" class="header__search-input" placeholder="Nhập Để Tìm Kiếm Sản Phẩm">
+                        <div class="header__search-history">
+                            <h3 class="header__search-history-heading">
+                                Lịch Sử Tìm Kiếm
+                            </h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="">Sữa Ông Thọ</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Sữa Ensure</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search-selection">
+                        <!-- <span class="header__search-selection-lable">Trong Shop</span>
+                        <i class="header__search-selection-icon fa-solid fa-chevron-down"></i> -->
+
+                        <ul class="header__search-option">
+                            <li class="header__search-option-item">
+                                <span class="header__search-option-btn">Trong Shop </span>
+                                <i class="header__search-option-icon fa-solid fa-check"></i>
+                            </li>
+                            <li class="header__search-option-item">
+                                <span class="header__search-option-btn">Ngoài Shop </span>
+                                <i class="header__search-option-icon fa-solid fa-check"></i>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="header__Cart">
+                    <div class="header__Cart-wrap">
+                        <i class="header__Cart-icon fas fa-cart-shopping"></i>
+                      
+                        <div class="header__Cart-list header__Cart-list--no-cart">
+                            <!-- <img src="assets/img/QR_code.png" alt="" class="header__Cart-no-cart-img"> -->
+                            <span class="header__Cart-list-no-cart-msg">
+                                Chưa Có Sản Phẩm
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="constainer">
+        <div class="grid constainer-grid">
+          <div class="grid__row">
+                <div class="grid__column-2">
+                    <div class="constainer_category">
+                        <div class="category-heading">Các Mặt Hàng Sữa</div>
+                        
+                      
+                        <li class="category-list-name"><a href="" class="category-list-link js-menu-item "> Sữa Bọt</a></li>
+                        <li class="category-list-name"><a href="" class="category-list-link js-menu-item "> Sữa Tươi</a></li>
+                        <li class="category-list-name"><a href="" class="category-list-link js-menu-item "> Sữa Sữa Động Vật</a></li>
+                        <li class="category-list-name"><a href="" class="category-list-link js-menu-item "> Sữa Béo</a></li>
+                    </div>
+                    <!-- <button id="message" class="message"> Tin Nhắn</button> -->
+                </div>
+                <div class="grid__column-10">
+                    <div class="constainer_Product">
+                        <div class="constainer_filter-header">
+                            <div class="constainer_filter-header-list">
+                                <span class="constainer_filter-label">
+                                    Sắp Xếp Theo
+                                </span>
+                                <button class="constainer_filter-btn">
+                                    Phổ Biến
+                                </button>
+                                <button class="constainer_filter-btn">
+                                    Mới Nhất
+                                </button>
+                                <button class="constainer_filter-btn">
+                                    Sữa Mua Nhiều Nhất
+                                </button>
+                                <!-- <div class="constainer_filter-price">
+                                    Gói Nạp
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <div class="filter-price-list">
+                                        <div class="filter-price-btn">Nạp Gói: Gói Chơi Theo Tháng</div>
+                                        <div class="filter-price-btn">Nạp Gói: Gói Chơi Theo Năm</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <a href="/add-milk" class="constainer_filter-header-add addmilk-js">
+                                Thêm Loại Sữa Mới
+                           </a>
+                        </div>
+                    
+                        <div class="constainer_Product-list-item">
+                           
+                             <div class="grid__row menu default-menu">
+                                <div class="grid__column-2-10">
+                                    <div class="home__Product-item" href="#">
+                                        <div class="home__Product-item-img" style="background-image: url()"></div>
+                                        <h4 class="home__Product-item-name">
+                                         </h4>
+                                         <div class="home__Product-item-sale">
+
+                                             <h5 class="home__Product-item-money">
+                                            </h5>
+                                            <h5 class="home__Product-item-money-1">
+                                            </h5>
+                                         </div>
+                                         <!-- <div class="home__Product-item-Information">
+                                             <h5 class="home__Product-item-information-name">570.000VND </h5>
+                                             <h5 class="home__Product-item-information-name">Sữa Bột</h5>
+                                             <h5 class="home__Product-item-information-name"> 370 gr</h5>
+                                         </div> -->
+                                         
+                                        <div class="home__Product-item-origin">
+                                          <button class="playgame buy-now">Mua Ngay</button>
+                                          <button id ="information" class="playgame">Thông Tin</button>
+                                        </div>
+                                        <div class="home__Product-item-favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                           <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="home__Product-item-sale-off">
+                                            <span class="home__Product-item-sale-off-precent">
+                                                10%
+                                            </span>
+                                            <span class="home__Product-item-sale-off-lable">
+                                                GIẢM
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                             
+                            </div>
+                         
+                        </div>
+                        
+                    </div>
+                </div>
+          </div>
+          
+        </div>
+    </div>
+    <footer class="footer">
+         <div class="party__wall">
+        </div>
+        <div class="grid">
+
+        
+        <div class="footer_Information grid__column-100">
+            <div class="grid__column-2-10">
+                    <div class="footer_content">
+                        <div class="content-heading">Chăm Sóc Khách Hàng</div>
+                        <li class="content-list-name"><a href="" class="content-list-link">Trợ Giúp Khách Hàng</a></li>
+                        <li class="content-list-name"><a href="" class="content-list-link">Hướng Dẫn Mua Hàng</a></li>
+                    </div>     
+            </div>
+            <div class="grid__column-2-10">
+                <div class="footer_content">
+                    <div class="content-heading">Giới Thiệu</div>
+                    <li class="content-list-name"><a href="" class="content-list-link">Giới Thiệu</a></li>
+                    <li class="content-list-name"><a href="" class="content-list-link">Tuyển Dụng</a></li>
+                    <li class="content-list-name"><a href="" class="content-list-link">Điều Khoản</a></li>
+                </div>     
+            </div>
+            <div class="grid__column-2-10">
+                <div class="footer_content">
+                    <div class="content-heading">Theo Dõi Chúng Tôi</div>
+                    <li class="content-list-name"><a href="" class="content-list-link "> 
+                        <i class=" fa-brands fa-facebook footer-logo-social-network"></i>
+                        FaceBook</a></li>
+                    <li class="content-list-name"><a href="" class="content-list-link ">
+                        <i class=" fa-brands fa-instagram footer-logo-social-network"></i>
+                        Instagram</a></li>
+                    <li class="content-list-name"><a href="" class="content-list-link">
+                        <i class=" fa-brands fa-linkedin footer-logo-social-network"></i>
+                        Linkedin</a></li>
+                </div>     
+            </div>
+            <div class="grid__column-2-10">
+                <div class="footer_content">
+                    <div class="content-heading">Các Mặt Hàng Sữa</div>
+                    <li class="content-list-name"><a href="" class="content-list-link">Sữa Bọt</a></li>
+                    <li class="content-list-name"><a href="" class="content-list-link">Sữa Tươi</a></li>
+                    <li class="content-list-name"><a href="" class="content-list-link">Sữa Động Vật</a></li>
+                    <li class="content-list-name"><a href="" class="content-list-link">Sữa Béo</a></li>
+                </div>     
+            </div>
+            <!-- <div class="grid__column-2-10">
+                <div class="footer_nav-item footer_nav-item-hasQR footer_nav-item-separate">
+                    <div class="content-heading">
+                      
+                    </div> 
+                    <div class="footer_nav-QR">
+                       <img src="/img/img/QR_code.png" alt="QR_code" class="footer_nav-img" >
+                       <div class="footer_nav-QR-apps">
+                        <a href="" class="footer_nav-QR-link">
+                            <img src="/img/img/GooglePlay.png "lt="Google Play" class="footer_nav-QR-dow-img">
+                        </a>
+                        <a href="" class="footer_nav-QR-link"> 
+                            <img src="/img/img/Appstore.png" alt="App Store" class="footer_nav-QR-dow-img">
+                        </a>
+                       </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="grid__row">
+        <p class="footer-text">
+            © 2020 Bản quyền thuộc về cá nhân Nguyễn Công Anh - Website được tạo ra vì mục đích học tập, không vì mục đích thương mại
+        </p>
+    </div>
+    </footer>
+    <div class="modal" id="myModal">
+        <form action="/delete-milk/<%= ad.tensua %>" method="POST">
+        <div class="modal-ticker js-modal-ticker modal-content">
+            <div class="modal-header-container"id="closeModal">
+                <i class=" modal-ticker-header ti-close"></i>
+            </div>
+            <div class="modal-container">
+                <header class="modal-header"> 
+                    <i class="fa-regular fa-message"></i>
+                    Thông tin Sữa </header>
+                </div>
+                    
+                    <div class="modal-body-container">
+                        <!-- <label for ="quatity" class="modal-body-header d-none"> 
+                            <i class="ti-user"></i>
+                            Id
+                        </label> --> 
+                        <!-- <input name="id" id="quatity"type="text" class="modal-input d-none" value="<%= ad.id %>"> -->
+                        <label for ="quatity" class="modal-body-header"> 
+                            <i class="ti-user"></i>
+                            Tên Sữa
+                        </label>
+                        <input name="tensua" id="quatity"type="text" class="modal-input" value="<%= ad.tensua %>">
+                        
+                        <label for="email"class="modal-body-header"> 
+                            <i class="ti-money"></i>
+                            Giá Tiền 
+                        </label>
+                        <input name="giatien" id="email"type="text" class="modal-input" value="<%= ad.giatien %>">
+                        <label for="email"class="modal-body-header"> 
+                            <i class="ti-paint-bucket"></i>
+                            Loại Sữa
+                        </label>
+                        <input name="loaisua" id="email"type="text" class="modal-input" value="<%= ad.loaisua %>">
+                        <label for="email"class="modal-body-header"> 
+                            <i class="ti-server"></i>
+                            Trọng Lượng
+                        </label>
+                        <input name="trongluong" id="email"type="text" class="modal-input" value="<%= ad.trongluong %>">
+                    </div>
+
+                    <div class="modal-container">
+                        <div class="modal-container-full">
+                           
+                            <button class="modal-buy"> 
+                                Sửa <i class="ti-check"></i></button> 
+                               
+
+                                    <button onclick="confirmDelete('<%= ad.tensua %>')" class="modal-buy"> 
+                                        Xóa <i class="ti-close"></i></button> 
+                                    
+                              
+                        </div>
+                    </div>
+                </div>
+            </form> 
+    </div>
+
+
+    <script>
+ const informations = document.querySelectorAll('#information');
+const closeModals = document.querySelectorAll('#closeModal');
+
+for (const information of informations) {
+  information.addEventListener('click', () => {
+    // Tìm modal của phần tử thông tin được nhấn
+    const modal = information.parentElement.querySelector('.modal');
+    modal.style.display = 'block';
+  });
+}
+
+for (const closeModal of closeModals) {
+  closeModal.addEventListener('click', () => {
+    closeModalAndNavigateHome(closeModal);
+  });
+}
+
+// Đóng modal khi nhấn bất kỳ nơi nào trên modal (ngoại trừ phần nội dung modal)
+document.addEventListener('click', (event) => {
+  const modal = event.target.closest('.modal');
+  if (modal && event.target === modal) {
+    closeModalAndNavigateHome(modal);
+  }
+});
+
+function closeModalAndNavigateHome(modal) {
+  modal.style.display = 'none';
+  // Chuyển hướng về trang chủ
+  window.location.href = '/';
+}
+
+
+function confirmDelete(tensua) {
+  if (confirm("Bạn có chắc chắn muốn xóa sản phẩm này?")) {
+    // Nếu người dùng đồng ý xóa, thực hiện chuyển hướng đến route xóa.
+    window.location.href = "/delete-milk/<%= ad.tensua %>";
+  } else {
+    // Nếu người dùng không đồng ý xóa, không làm gì cả.
+  }
+}
+    </script>
+</body>
+</html>

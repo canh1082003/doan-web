@@ -1,0 +1,327 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --header-height: 100px;
+    --header_nav-height: 34px;
+    --header-withs-search-height: calc(var(--header-height) - var(--header_nav-height));
+
+}   
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+p{
+    font-size: 1.6rem;
+}
+.grid{
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    /* tất cả các chữ sẽ nằm ngang */
+    display: flex; 
+    /* tự động xuống hàng khi vượt quá độ dài của class */
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.grid__column-100{
+    width: 100%;
+    /* padding-left: 10px; */
+    padding-right: 10px
+}
+.grid__column-2{
+    padding-left:5px;
+    padding-right:5px;
+    width: 16.66667%;
+}
+.grid__column-2-10{
+    padding-left:5px;
+    padding-right:5px;
+    width: 20%;
+}
+.grid__column-2-8{
+    padding-left:5px;
+    padding-right:5px;
+    width: 25%;
+}
+.grid__column-2_5-10{
+    padding-left:5px;
+    padding-right:5px;
+    width: 25%;
+}
+.grid__column-10{
+    padding-left:5px;
+    padding-right:5px;
+    width: 83.33333%;
+
+}
+
+/* Tin Nhan */
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 4;
+   
+}
+.modal-form{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 4;
+}
+.modal-add{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 4;
+}
+.regsiter-form{
+    display: none;
+}
+.login-form {
+    display: none;
+}
+.modal-content{
+    border-top-right-radius: 90px;
+    border-top-left-radius: 90px;
+
+
+}
+.modal-content-add{
+    border-top-right-radius: 90px;
+    border-top-left-radius: 90px;
+}
+.modal-ticker{
+    /* max-width: (100%-32px); */
+    margin-top: 46px;
+   width: 700px;
+   height: 471px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 150px;
+   position: relative;
+   background-color: #fff;
+    /* border-radius: 100px; */
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+}
+.modal-ticker-admin{
+     /* max-width: (100%-32px); */
+     margin-top: 46px;
+     width: 700px;
+     height: 471px;
+     margin-left: auto;
+     margin-right: auto; 
+     margin-top: 150px;
+     position: relative;
+     background-color: #fff;
+}
+.modal-infomation{
+    height: 400px;
+}
+.modal-header{
+    color: #fff;
+    background-color:rgb(11, 113, 113);
+    font-size: 30px;
+    height: 72px;
+    text-align: center;
+    line-height: 72px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+
+}
+.modal-header-icon{
+    padding: 10px;
+}
+.modal-header-container{
+    background-color: #05a2a2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    padding: 23.5px;
+    padding-right: 40px;
+    border-top-right-radius: 100px;
+}
+.modal-ticker-header{
+    left: 0;
+    font-size: 25px;
+    color: #fff;
+}
+ .modal-header-container:hover  {
+    background-color: aqua;
+    color: #000;
+}
+.modal-body-container{
+    padding: 16px;
+
+}
+.modal-body-header{
+    background-color: #fff;
+    margin-bottom: 5px;
+    color: #000;
+    font-size: 15px;
+    display: block;
+
+}
+.modal-input{
+
+    margin-bottom: 9px;
+    width: 100%;
+    padding :10px;
+}
+.d-none{
+    display: none;
+}
+.modal-container{
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    /* overflow: hidden; */
+}
+.modal-container-full{
+    display: flex;
+}
+.modal-buy{
+    /* border-bottom-right-radius:100px; */
+    background-color:rgb(11, 113, 113);
+    text-decoration:none ;
+    height: 34px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 16px;
+    border:none;
+    flex: 1;
+}
+.modal-buy:first-child{
+    border-bottom-left-radius:100px;
+
+}
+.modal-buy:last-child{
+    border-bottom-right-radius:100px;
+
+}
+.modal-buy:hover{
+    background-color:rgb(15, 158, 158);
+    color: #000;
+    /* border: 1px #333 solid; */
+}
+.modal-footer{
+    background-color: #fff;
+    color: #000;
+    font-size: 15px; 
+  
+}
+
+.modal_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal_body{
+    --growth-from: 0.7;
+    --growth-to: 1;
+    background-color: #fff;
+    width: 500px;
+    /* height: 60vh; */
+    z-index: 1;
+    margin: auto;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 100px;
+    animation: growth linear 0.1s;
+}
+
+.modal_footer-exist{
+    display: flex;
+    justify-content: right; 
+    font-weight: 400;
+    margin-top: 65px;
+}
+.modal_footer-exist-btn{
+    
+    padding: 10px 30px;
+    font-size: 1.6rem;   
+}
+.modal_footer-exist-btn:nth-child(2){
+    background-color: #ee4d2d;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.modal_footer-exist-btn:nth-child(1):hover{
+    background-color: #ccc;
+}
+
+.modal_footer-connect{
+    background-color: #ccc;
+    /* width: 100%; */
+    margin-top: 10px;
+    padding: 15px 32px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.modal_footer-connect-btn{
+    border-radius: 2px;
+    height: 30px;
+    width: 49%;
+}
+
+.modal-icon-facebook{
+    background-color: #3a5a98;
+    color: #fff;
+    line-height: 36px;
+   
+}
+
+.modal-icon-facebook
+.modal_footer-connect-icon{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 1.7rem;  
+    
+}
+.modal_footer-connect-text{
+    margin-left: 55px;
+}
+
+.modal-icon-googles{
+    background-color: #fff;
+    line-height: 36px; 
+}
+.modal-icon-googles
+.modal_footer-connect-icon{
+    margin-left: 10px;
+    font-size: 1.7rem;
+}

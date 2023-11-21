@@ -1,0 +1,361 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Sữa</title>
+    
+    <link rel="stylesheet" href="/css/formdndk.css">
+    
+</head>
+<body>
+    <style>
+        .form-sign-up{
+            display: block;
+        }
+        .form-log-in{
+            display: none;
+        }
+    </style>
+    <!-- <form action="/register" method="POST"> -->
+    <div class="container">
+         
+      <div class="slider">
+        <div class="slider-image">
+          <img src="/img/img1.jpg" alt="" class="slider-img">
+          <img src="/img/img2.jpg" alt="" class="slider-img">
+          <img src="/img/img3.jpg" alt="" class="slider-img">
+          <div class="slider-dots">
+              <span class="dot active" onclick="showSlide(0)"></span>
+              <span class="dot" onclick="showSlide(1)"></span>
+              <span class="dot" onclick="showSlide(2)"></span>
+          </div>
+        </div>
+      </div>
+          
+      <div class="main">
+        <form action="/register" method="POST"  id="form-1">
+
+        <div class="main-form">
+          <div class="content">
+            <div class="form-sign-up" id="signup">  
+              <div class="form-header">
+                  <h1 class="form-headding">ĐĂNG KÝ</h1>
+              </div>
+                      <div class="form-fill">
+                        
+                          <div class="form-full">
+                              <lable class="form_lable" >Nhập Email Của Bạn</lable>
+                              <div class="full-img-icon">
+                                  <!-- <img  src="https://img.icons8.com/officel/16/user.png" alt="user" class="img-icon"/> -->
+                              </div>
+                                  <input id="email" type="email" name="email" class="fill-infor" placeholder="Nhập E-Mail" required="" >
+                              
+                              <span class="form_span"></span>
+                          </div>
+                          <div class="form-full">
+                            <lable class="form_lable" >Nhập Họ Và Tên Của Bạn</lable>
+                            <div class="full-img-icon">
+                                <!-- <img  src="https://img.icons8.com/officel/16/user.png" alt="user" class="img-icon"/> -->
+                            </div>
+                                <input id="name" type="text" name="name" class="fill-infor" placeholder="Nhập Họ Và Tên Của Bạn" required="" >
+                            
+                            <span class="form_span"></span>
+                        </div>
+                          <div class="form-full">
+                            <lable class="form_lable" >Nhập Số Điện Thoại</lable>
+                            <div class="full-img-icon">
+                                <!-- <img  src="https://img.icons8.com/officel/16/user.png" alt="user" class="img-icon"/> -->
+                            </div>
+                                <input id="phone" type="number" name="phone" class="fill-infor" placeholder="Nhập Số Điện Thoại Của Bạn" required="" >
+                            
+                            <span class="form_span"></span>
+                        </div>
+                          <div class="form-full"> 
+                              <lable class="form_lable" >Mật Khẩu</lable>
+                                  <div class="full-img-icon">
+
+                                      <!-- <img  src="https://img.icons8.com/color-glass/48/password.png" alt="password" class="img-icon"/> -->
+                                  </div>
+                                  <input id="password" type="password" name="password" class="fill-infor" placeholder="Nhập Password" required="">
+                              
+                              <span class="form_span"></span>
+                          </div>
+                          <div class="form-full">
+                              <lable class="form_lable" >Nhập Lại Mật Khẩu</lable>
+                              <div class="full-img-icon">
+                                  <!-- <img  src="https://img.icons8.com/dusk/64/re-enter-pincode.png" alt="re-enter-pincode" class="img-icon"/> -->
+                              </div>
+                                  <input id="password_confirm" type="password" name="confirm_password" class="fill-infor" placeholder="Nhập lại Password" required="">
+                            
+                              <span class="form_span"></span>
+                          </div>
+                      </div>
+                      <div class="form-btn">
+                        <button type="submit" class="btn-confirm "  id="registerButton">Đăng Ký</button>
+                      </div>
+                      <div class="form-link">
+                          <a href="#" class="account text">Đăng nhập</a>
+                      </div>
+                  </div>
+      
+          </div>
+        </div>
+            </form>
+            <form action="" id="form-2">
+    
+                <div class="main-form login-form">
+                    <div class="content">
+                        <div class="form-log-in" id="login">
+                            <div class="form-header">
+                                <h1 class="form-headding">ĐĂNG NHẬP</h1>
+                            </div>
+                            <div class="form-fill">
+                                <div class="form-full">
+                                    <lable class="form_lable" >Nhập Email Của Bạn</lable>
+                                    <div class="full-img-icon">
+                                        <!-- <img  src="https://img.icons8.com/officel/16/user.png" alt="user" class="img-icon"/> -->
+                                    </div>
+                                        <input id="email" type="email" name="user" class="fill-infor" placeholder="Nhập E-Mail" required="" >
+                                    
+                                    <span class="form_span"></span>
+                                </div>
+                                <div class="form-full"> 
+                                    <lable class="form_lable" >Mật Khẩu</lable>
+                                        <div class="full-img-icon">
+    
+                                            <!-- <img  src="https://img.icons8.com/color-glass/48/password.png" alt="password" class="img-icon"/> -->
+                                        </div>
+                                        <input id="password" type="password" name="pass" class="fill-infor" placeholder="Nhập Password" required="">
+                                    
+                                    <span class="form_span"></span>
+                                </div>
+                            </div>
+                            <div class="form-btn">
+                              <a href="#" class="btn-confirm">Đăng nhập</a>
+                            </div>
+                            <div class="form-link-login">
+                                <a href="#" class="footer-forget text">Quên mật khẩu ?</a> <br>
+                                <a href="#" class="footer-signup text">Bạn chưa có tài khoản ?</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </form>
+          </div>
+          <div class="successful-login"id="successMessage" >
+            Bạn Đã Đăng Ký Thành Công, Chúng tôi sẽ đưa bạn trở vể trang Home để bạn đăng nhập
+          </div> 
+     </div>
+    <!-- </form> -->
+    <script>
+        const login = document.getElementById("login");
+        const signup = document.getElementById("signup");
+
+        const loginLink = document.querySelector(".footer-log-in");
+        const signupLink = document.querySelector(".footer-signup");
+        const accountLink = document.querySelector(".account");
+
+        signupLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            login.style.display = "none";
+            signup.style.display = "block";
+        });
+
+        accountLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            signup.style.display = "none";
+            login.style.display = "block";
+        });
+
+
+
+        function register(options) {
+  var formRegister = document.querySelector(options.form);
+
+  function validate(inputRegister, rule) {
+    var errorMessage = rule.test(inputRegister.value);
+    var errorRegister = inputRegister.parentElement.querySelector(options.errorSelector);
+    if (errorMessage) {
+      errorRegister.innerText = errorMessage;
+      inputRegister.classList.add('invalid');
+    } else {
+      errorRegister.innerText = '';
+      inputRegister.classList.remove('invalid');
+    }
+  }
+
+  if (formRegister) {
+    options.rules.forEach(function (rule) {
+      var inputRegister = formRegister.querySelector(rule.selector);
+      if (inputRegister) {
+        var formFull = inputRegister.closest('.form-full'); // Tìm phần tử cha có lớp 'form-full'
+        var errorSpan = formFull.querySelector(options.errorSelector); // Tìm phần tử 'span' trong 'form-full' để hiển thị lỗi
+
+        inputRegister.addEventListener('blur', function () {
+          validate(inputRegister, rule);
+        });
+
+        inputRegister.addEventListener('input', function () {
+          errorSpan.innerText = ''; // Sử dụng 'errorSpan' thay vì 'errorRegister' để hiển thị thông báo lỗi
+          inputRegister.classList.remove('invalid');
+        });
+      }
+    });
+  }
+}
+// register:isphone => {
+
+// const regexPhoneNumber = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
+
+// return phone.match(regexPhoneNumber) ? true : false;
+
+// }
+
+register.isName = (selector, message) => ({
+  selector: selector,
+  test: function (value) {
+    var regex =/^[a-zA-Z ]+$/;
+    return regex.test(value) ? undefined : message || 'Vui lòng đúng trường này';
+  }
+});
+register.isphone = (selector, message) => ({
+  selector: selector,
+  test: function (value) {
+    var regex =/(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
+    return regex.test(value) ? undefined : message || 'Vui lòng đúng trường này';
+  }
+});
+register.isEmail = (selector, message) => ({
+  selector: selector,
+  test: function (value) {
+    var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+/;
+    return regex.test(value) ? undefined : message || 'Vui lòng nhập trường này';
+  }
+});
+
+register.minLength = (selector, min) => ({
+  selector: selector,
+  test: function (value) {
+    return value.length >= min ? undefined : `Vui lòng nhập tối thiểu ${min} ký tự`;
+  }
+});
+
+register.isConfirm = (selector, getConfirmValue) => ({
+  selector: selector,
+  test: function (value) {
+    const confirmValue = getConfirmValue();
+    return value === confirmValue ? undefined : 'Giá trị nhập vào không chính xác';
+  }
+});
+
+const registeredEmails = [];
+
+// Hàm kiểm tra địa chỉ email
+register.isUniqueEmail = (selector, message) => ({
+  selector: selector,
+  test: function (value) {
+    var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+/;
+
+    // Kiểm tra địa chỉ email có hợp lệ không
+    if (!regex.test(value)) {
+      return message || 'Vui lòng nhập địa chỉ email hợp lệ';
+    }
+
+    // Kiểm tra xem địa chỉ email đã tồn tại chưa
+    if (registeredEmails.includes(value)) {
+      return 'Địa chỉ email đã tồn tại trong hệ thống';
+    }
+
+    // Nếu không có lỗi, đánh dấu địa chỉ email là đã đăng ký
+    registeredEmails.push(value);
+
+    // Trả về undefined để không có lỗi
+    return undefined;
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  // Gán sự kiện khi trang đã tải hoàn toàn
+  register({
+    form: '#form-1',
+    errorSelector: '.form_span',
+    rules: [
+    register.isUniqueEmail('#email', 'Vui lòng nhập địa chỉ email duy nhất'),
+      register.isphone('#phone'),
+      register.isName('#name'),
+      register.isEmail('#email'),
+      register.minLength('#password', 6),
+      register.isConfirm('#password_confirm', function () {
+        return document.querySelector('#form-1 #password').value;
+      })
+    ]
+  });
+  register({
+    form: '#form-2',
+    errorSelector: '.form_span',
+    rules: [
+      register.isEmail('#email'),
+      register.minLength('#password', 6),
+      register.isConfirm('#password_confirm', function () {
+        return document.querySelector('#form-1 #password').value;
+      })
+    ]
+  });
+});
+
+      
+      /// Thông báo Đăng Ký Thành Công
+      document.getElementById("form-1").addEventListener("submit", function (e) {
+  e.preventDefault(); // Ngăn chặn gửi biểu mẫu mặc định
+
+  // Lấy giá trị địa chỉ email từ biểu mẫu
+  const emailValue = document.getElementById("email").value;
+
+  // Kiểm tra xem địa chỉ email đã tồn tại chưa
+  if (registeredEmails.includes(emailValue)) {
+    // Nếu tồn tại, hiển thị thông báo lỗi
+    document.querySelector('#form-1 .form_span').innerText = 'Địa chỉ email đã tồn tại trong hệ thống';
+  } else {
+    // Nếu không tồn tại, tiếp tục xử lý đăng ký
+
+    setTimeout(function () {
+      // Display the success message
+      document.getElementById("successMessage").style.display = "block";
+
+      // Redirect to the home page after 3 seconds
+      setTimeout(function () {
+        window.location.href = "/";
+      }, 3000);
+    }, 1000); // Simulating a 1-second registration process
+  }
+});
+
+
+        
+    /**Slider bar -begin---------------------------------------- */
+    const sliderImages = document.querySelectorAll(".slider-img");
+    const dots = document.querySelectorAll(".dot");
+    let currentSlide = 0;
+    function showSlide(slideIndex) {
+        sliderImages[currentSlide].style.animation = "";
+        sliderImages[slideIndex].style.animation = "slideImage 5s linear";
+        sliderImages[currentSlide].style.display = "none";
+        sliderImages[slideIndex].style.display = "block";
+        dots[currentSlide].classList.remove("active");
+        dots[slideIndex].classList.add("active");
+        currentSlide = slideIndex;
+    }
+    function nextSlide() {
+        let nextIndex = (currentSlide + 1) % sliderImages.length;
+        showSlide(nextIndex);
+    }
+
+    function startSlideShow() {
+        setInterval(nextSlide, 3000);
+    }
+
+    startSlideShow();
+    /*end---------------------------------------- */
+
+    </script>
+</body>
+</html>
